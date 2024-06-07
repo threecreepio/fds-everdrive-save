@@ -15,7 +15,7 @@ So because it's very easy to create a patch that bricks your disks, I've not mad
 If you open "patch.s" there are 4 segments that need to be updated:
 - DiskIDString is an identifier that will be checked against the disk to try to prevent writing the file to the wrong disk. If you open the FDS file in a hex editor, you will see a text "\*NINTENDO-HVC\*", the ten bytes following is the DiskID. There are different DiskIDs for every disk and side, so make sure you pick the correct one.
 
-![DiskID](img0.PNG)
+![DiskID](img0.png?raw=true)
 
 - FileNo is the "No" field in FDS Explorer, it's a number that starts at 0 for the first file and increments.
 
