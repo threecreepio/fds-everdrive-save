@@ -1,0 +1,13 @@
+MEMORY
+{
+	INES:        start =     0, size =   $10, fill=yes, fillval=$00;
+	PRG:         start = $4000, size = $3FFA, fill=yes, fillval=$EA;
+	VEC:         start = $7FFA, size =    $6, fill=yes, fillval=$EA;
+}
+
+SEGMENTS
+{
+	INES:    load = INES, type = ro;
+	PRG:     load = PRG,  type = ro;
+	VEC:     load = VEC,  type = ro;
+}
